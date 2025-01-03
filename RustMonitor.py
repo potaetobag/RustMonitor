@@ -16,7 +16,7 @@ def is_port_open(ip, port):
         sock.settimeout(5)  # Set timeout to prevent hanging
         result = sock.connect_ex((ip, port))
         sock.close()
-        
+
         if result == 0:
             print(f"Port {port} on {ip} is open.")
             return True
@@ -51,9 +51,9 @@ def main():
                     server_down = True
             else:
                 if server_down:
-                    print("Server is back online (no notification sent).")
+                    send_discord_notification("🚦 Server is back online! Players may now re-join. 🚦")
                     server_down = False
-            
+
             time.sleep(CHECK_INTERVAL)
     except KeyboardInterrupt:
         print("\nMonitoring stopped by user. Exiting gracefully.")
