@@ -6,7 +6,7 @@ RustMonitor is a Python script that monitors the availability of your Rust game 
 * Customizable Check Interval: Configure how often the script checks the server.
 * Windows Task Scheduler Support: Easily set up the script to run continuously on Windows.
 
-![](https://potaetobag.live/imgs/potaetobag-rustmonitor-discord.png)  
+![Screenshot sent from Rust to the Discord channel](https://potaetobag.live/imgs/potaetobag-rustmonitor-discord.png)  
 
 ## Prerequisites
 1. Install Python
