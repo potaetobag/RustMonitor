@@ -8,37 +8,49 @@ RustMonitor is a Python script that monitors the availability of your Rust game 
 
 ![](https://potaetobag.live/imgs/potaetobag-rustmonitor-discord.png)  
 
+## Prerequisites
+1. Install Python
+* Download Python from the [official website](https://www.python.org/).
+* During installation, ensure you check Add Python to PATH before proceeding.
+
+2. Install Required Python Library
+* Open Command Prompt (`Win + R`, type `cmd`, and press Enter).
+* Install the requests library by running:
+```
+pip install requests
+```
+
 ## How to Use
 Edit the script:
-Set SERVER_IP to your Rust server's IP address.
-Adjust PORT if your server uses a non-default port (default is 26016).
-Replace DISCORD_WEBHOOK_URL with your Discord webhook URL.
+Set `SERVER_IP` to your Rust server's IP address.
+Adjust `PORT` if your server uses a non-default port (default is 26015).
+Replace `DISCORD_WEBHOOK_URL` with your Discord webhook URL.
 
 Step 1: Open Task Scheduler
-* Press Win + S, type Task Scheduler, and open it.
+* Press `Win + S`, type **Task Scheduler**, and open it.
 
 Step 2: Create a New Task
-* In Task Scheduler, click Create Task on the right-hand panel.
+* In **Task Scheduler**, click **Create Task** on the right-hand panel.
 
 Step 3: General Settings
 * Name the task (e.g., "RustMonitor").
-* Select Run whether user is logged on or not.
-* Check Run with highest privileges.
+* Select **Run whether user is logged on or not**.
+* Check **Run with highest privileges**.
 
 Step 4: Trigger
-* Go to the Triggers tab and click New.
-* Set the trigger to At startup or Daily with a specific time.
-* Click OK.
+* Go to the **Triggers** tab and click New.
+* Set the trigger to **At startup** or **Daily** with a specific time.
+* Click **OK**.
 
 Step 5: Action
-* Go to the Actions tab and click New.
-* Choose Start a Program.
-* In the Program/script field, browse and select your RustMonitor.bat file.
-* Click OK.
+* Go to the **Actions** tab and click **New**.
+* Choose **Start a Program**.
+* In the Program/script field, browse and select your `RustMonitor.py` file.
+* Click **OK**.
 
 Step 6: Conditions
 * Optional: Adjust conditions like only running when the computer is idle.
 
 Step 7: Save and Test
-* Click OK to save the task.
-* Right-click your task in Task Scheduler and select Run to test it.
+* Click **OK** to save the task.
+* Right-click your task in **Task Scheduler** and select **Run** to test it.
