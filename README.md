@@ -14,7 +14,7 @@ RustMonitor is a Python script that monitors the availability of your Rust game 
 * During installation, ensure you check Add Python to PATH before proceeding.
 
 2. Install Required Python Library
-* Open Command Prompt (`Win + R`, type `cmd`, and press Enter).
+* Open Command Prompt (`Win + R`, type `cmd`, and press **Enter**).
 * Install the requests library by running:
 ```
 pip install requests
