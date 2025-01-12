@@ -4,7 +4,7 @@ import time
 
 # Configuration
 SERVER_IP = "IP"  # Replace with your Rust server's IP
-PORT = 26016  # Rust port to check
+PORT = 26016  # Rust port to check (rcon.port)
 DISCORD_WEBHOOK_URL = "URL"  # Replace with your Discord webhook URL
 CHECK_INTERVAL = 60  # Time in seconds between checks
 
